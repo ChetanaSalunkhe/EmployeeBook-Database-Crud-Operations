@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_theme_color_green">#1A7A28</color>
+    <color name="app_theme_color_maroon">#9B1F1A</color>
+    <color name="app_theme_color_yellow">#FBDE8A</color>
+    <color name="text_background_menu_maroon">#999B1F1A</color>
+    <color name="common_action_bar_splitter">#ffd2d2d2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#3C3C3C</color>
+    <color name="black">#000000</color>
+    <color name="grey2c">#2c2c2c</color>
+    <color name="greydc">#dcdcdc</color>
+    <color name="transp">#c0000000</color>
+    <color name="greyed">#ededed</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="green">#6cad1c</color>
+    <color name="brown">#B1773D</color>
+    <color name="viloet_light">#9b59b6</color>
+    <color name="violet_dark">#5d356d</color>
+    <color name="listselector">#fdf1d0</color>
+    <!--<color name="navybluedark">#002d4a</color>-->
+    <color name="navybluedark">#1065a8</color>
+    <!--<color name="griddark">#ffd9cf</color>--><!--old-->
+    <color name="griddark">#fee9ce</color>
+    <!--<color name="gridlight">#FFECE7</color>--><!--new-->
+    <color name="gridlight">#fef4e6</color>
+    <color name="colryellow2">#FFD911</color><!--old-->
+    <color name="colryellow">#fe920b</color>
+    <color name="gridseleblue">#87b2d3</color>
+
+    <color name="backgroundcolor">#6cad1c</color><!--f6facb-->
+    <color name="backgroundsplash">#FFD911</color><!--f6facb-->
+    <color name="backgrey">#dcdcdc</color>
+    <color name="selctrcolor">#87b2d3</color>
+    <!-- <color name="backgroundcolor">#1065a8</color>&lt;!&ndash;f6facb&ndash;&gt;
+     <color name="backgroundsplash">#FFD911</color>&lt;!&ndash;f6facb&ndash;&gt;
+     <color name="backgrey">#dcdcdc</color>-->
+
+    <!--grid box 9 colors-->
+    <color name="grid1">#f7e2f9</color>
+    <color name="grid2">#e0e0e2</color>
+    <color name="grid3">#f6d9d0</color>
+    <color name="grid4">#d9e7f4</color>
+    <color name="grid5">#fbedc8</color>
+    <color name="grid6">#eedcdc</color>
+    <color name="grid7">#dbf6d3</color>
+    <color name="grid8">#fae2ca</color>
+    <color name="grid9">#cdeff0</color>
+
+    <!--new theme-->
+    <color name="btncolordark_orange">#1065a8</color>
+    <color name="btncolorlight_orange">#6fa2ca</color>
+    <!--<color name="colorPrimary">#6fa2ca</color>
+    <color name="colorPrimaryDark">#1065a8</color>-->
+    <color name="colorPrimary">#feaa41</color>
+    <color name="colorPrimaryDark">#fe920b</color>
+    <color name="colorAccent">#fe920b</color>
+
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+</resources>

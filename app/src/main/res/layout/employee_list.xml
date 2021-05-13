@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EmployeeListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="7dp"
+        android:padding="7dp"
+        android:background="@drawable/border"
+        android:elevation="1dp">
+
+        <ImageView
+            android:id="@+id/imgprof"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/male"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="14sp"
+                android:textColor="@color/btncolordark_orange"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtmobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile"
+                    android:textSize="13sp"
+                    android:textColor="@color/btncolorlight_orange"
+                    android:layout_weight="0.3"/>
+
+                <TextView
+                    android:id="@+id/txtemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="13sp"
+                    android:layout_weight="0.7"
+                    android:textColor="@color/btncolorlight_orange"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center_vertical|right"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="13sp"
+                android:textColor="@color/btncolorlight_orange"/>
+
+            <TextView
+                android:id="@+id/txtdesignation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Designation"
+                android:textSize="13sp"
+                android:textColor="@color/btncolorlight_orange"
+                android:textStyle="italic|bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

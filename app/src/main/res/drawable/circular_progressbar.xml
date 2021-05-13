@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape
+            android:shape="ring"
+            android:thicknessRatio="10"
+            android:useLevel="false">
+            <solid android:color="#DDD" />
+        </shape>
+
+    </item>
+    <item>
+        <rotate
+            android:fromDegrees="270"
+            android:toDegrees="270">
+            <shape
+                android:shape="ring"
+                android:thicknessRatio="10"
+                android:useLevel="true">
+                <gradient
+                    android:endColor="@color/colorPrimary"
+                    android:startColor="@color/colorAccent" />
+            </shape>
+        </rotate>
+    </item>
+
+   <!-- <item android:id="@android:id/background">
+        <shape>
+            <gradient
+                android:startColor="#ededed"
+                android:endColor="#ededed"
+                android:angle="45"
+                />
+            &lt;!&ndash;d2e5ff&ndash;&gt;
+            <corners
+                android:bottomRightRadius="7dp"
+                android:bottomLeftRadius="7dp"
+                android:topLeftRadius="7dp"
+                android:topRightRadius="7dp"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <gradient
+                    android:startColor="#808080"
+                    android:endColor="#808080"
+                    android:angle="270"
+                    />
+                <corners
+                    android:bottomRightRadius="7dp"
+                    android:bottomLeftRadius="7dp"
+                    android:topLeftRadius="7dp"
+                    android:topRightRadius="7dp"/>
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <gradient
+                    android:startColor="#00574B"
+                    android:endColor="#00574B"
+                    android:angle="45" />
+                <corners
+                    android:bottomRightRadius="7dp"
+                    android:bottomLeftRadius="7dp"
+                    android:topLeftRadius="7dp"
+                    android:topRightRadius="7dp"/>
+            </shape>
+
+        </clip>
+    </item>-->
+
+</layer-list>

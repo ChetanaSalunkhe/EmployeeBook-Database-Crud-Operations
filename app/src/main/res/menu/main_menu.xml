@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/view"
+        android:title="View Book"
+        android:icon="@drawable/users"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/option"
+        android:title="Battery Status"
+        android:icon="@drawable/battery"
+        app:showAsAction="always"/>
+
+</menu>
