@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:gravity="center|top"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_vertical"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/circular_progressbar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="70%"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+
+        <Button
+            android:id="@+id/decrease_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-10%"
+            android:textColor="#fff"
+            app:layout_constraintStart_toStartOf="@+id/progressbar"
+            app:layout_constraintTop_toBottomOf="@+id/progressbar"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/increase_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+10%"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/text_progress"
+            app:layout_constraintStart_toEndOf="@+id/progressbar"
+            app:layout_constraintTop_toBottomOf="@+id/progressbar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entry Form"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/btncolordark_orange"
+            android:layout_gravity="center_horizontal|left"
+            android:gravity="center_horizontal|left"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/edtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:textSize="13sp"
+            android:textColor="@color/btncolordark_orange"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:layout_margin="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/edtmobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="mobile"
+                android:textSize="13sp"
+                android:textColor="@color/btncolordark_orange"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="10"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <RadioButton
+                    android:id="@+id/rdbtnmale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:buttonTint="@color/btncolordark_orange"
+                    android:textColor="@color/btncolorlight_orange"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/rdbtnfemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:buttonTint="@color/btncolordark_orange"
+                    android:textColor="@color/btncolorlight_orange"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/edtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="13sp"
+            android:textColor="@color/btncolordark_orange"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:layout_margin="5dp"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/edtaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:textSize="13sp"
+            android:maxLines="5"
+            android:textColor="@color/btncolordark_orange"
+
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:layout_margin="5dp"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/edtdesignation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Designation"
+            android:textSize="13sp"
+            android:textColor="@color/btncolordark_orange"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:background="@color/btncolordark_orange"
+        android:text="Submit"
+        android:textSize="15sp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
